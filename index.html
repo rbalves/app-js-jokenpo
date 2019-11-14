@@ -1,22 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <title>JokenPo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="header">
+        <h1>JokenPo</h1>
+    </div>
     <div class="container">
-        <div class="header">
-            <h1>JokenPo</h1>
-        </div>
         <div class="play">
-            <div id="div-rounds"></div>
+            <div id="rounds"></div>
             <div id="message"></div>
-            <div id="name-players"></div>
+            <div id="players"></div>
             <div id="choices-players"></div>
             <div>
                 <h4>Pontuação</h4>
@@ -27,12 +26,14 @@
                 <button class="button-play" id="button-paper" onclick="clickButtonChoice('Papel')">Papel</button>
                 <button class="button-play" id="button-scissors" onclick="clickButtonChoice('Tesoura')">Tesoura</button>
             </div>
-            <div id="play-buttons">
+            <div id="control-buttons">
                 <button id="button-new-play" onclick="newPlay()">Novo jogo</button>
             </div>
         </div>
     </div>
-
+    <div class="footer">
+        <p>Desenvolvidor por <a href="http://rbalves.github.io" target="_blank">Rafael Alves</a></p>
+    </div>
     <script src="play.js"></script>
 </body>
 </html>

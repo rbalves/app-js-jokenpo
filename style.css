@@ -1,9 +1,21 @@
-body{
-    background-color: 	#FFFAFA;
+* {
+    box-sizing: border-box;
 }
 
-.header{
+body{
+    background-color:#FFF;
+}
+
+.container{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    overflow:auto;
+}
+
+.header, .footer{
     text-align: center;
+    background-color:#e5e5e5;
+    padding: 15px;
 }
 
 h1{
@@ -12,16 +24,21 @@ h1{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h2, h3{
+h2, h3, h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+p, a{
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .play{
-    margin: 5%;
-    padding: 1.5%;
-    border: 2px solid gray;
-    border-radius: 10px;
+    float:left;
+    width:100%;
+    padding: 1%;
     text-align: center;
+    background-color: #30997a;
 }
 
 button{
@@ -50,7 +67,7 @@ button:disabled {
   }
 
 #button-stone{
-    background-color: #008CBA;
+    background-color: #da6f2b;
 }
 
 #button-paper{
@@ -58,7 +75,7 @@ button:disabled {
 }
 
 #button-scissors{
-    background-color: #555555;
+    background-color: #6a478f;
 }
 
 #button-new-play{
